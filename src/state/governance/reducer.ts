@@ -154,7 +154,8 @@ export const initialState: GovernanceState = {
 export default createReducer(initialState, builder =>
   builder
     .addCase(updateActiveProtocol, (state, action) => {
-      state.activeProtocol = action.payload.activeProtocol
+      console.log(state, action)
+      state.activeProtocol = RADICLE_GOVERNANCE
     })
     .addCase(updateFilterActive, (state, action) => {
       state.filterActive = action.payload.filterActive

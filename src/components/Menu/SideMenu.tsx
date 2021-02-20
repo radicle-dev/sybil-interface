@@ -72,7 +72,7 @@ const Haptik = styled(TYPE.black)`
 `
 
 export default function SideMenu() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const [faqOpen, setfaqOpen] = useState(false)
 
   function closeBoth() {
