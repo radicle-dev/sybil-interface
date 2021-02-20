@@ -66,7 +66,7 @@ export const DELEGATES_FROM_LIST = gql`
 // all proposals
 export const PROPOSALS = gql`
   query proposals {
-    proposals(first: 100, orderBy: startBlock, orderDirection: desc) {
+    proposals(first: 100, orderBy: startBlock, orderDirection: desc, where: { status_not: "CANCELLED" }) {
       id
       targets
       values
